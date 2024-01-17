@@ -17,8 +17,6 @@
 	--grey: ;
 	--greyAlpha: ;
 	--gradientButtonColor: ;
-	--whiteRating: ;
-	--yellowRating: ;
 }
 body{
 	display: flex;
@@ -50,6 +48,13 @@ body{
 	top: 2em;
 	left: 50%;
 	transform: translateX(-50%);
+	background: var(--gradientButtonColor);
+	background: var(--greyAlpha);
+	background: var(--grey);
+	background: var(--whiteAlpha);
+	background: var(--white);
+	background: var(--secondaryAlpha);
+	background: var(--thirdKit);
 	background: var(--secondaryColor);
 	width: 80%;
 	border-radius: .8em;
