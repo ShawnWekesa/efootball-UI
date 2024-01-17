@@ -6,14 +6,19 @@
 	text-decoration: none;
 	color: white;
 	font-family: sans-serif;
-	: 1px solid black;
 }
 :root{
-	--primaryColor: #02547a;
+	--primaryColor: #060e12;
 	--secondaryColor: #008761;
 	--thirdKit: #02edff;
-	/*--yellow: #c4d100;
-	--pink: #f94bd2;*/
+	--secondaryAlpha: ;
+	--white: ;
+	--whiteAlpha: ;
+	--grey: ;
+	--greyAlpha: ;
+	--gradientButtonColor: ;
+	--whiteRating: ;
+	--yellowRating: ;
 }
 body{
 	display: flex;
