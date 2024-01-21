@@ -18,4 +18,42 @@
 }
 body{
 	font-family: 'Poppins', sans-serif;
+	background: var(--primaryColor);
+	padding: 2em;
+}
+.popup-menu{
+	position: relative;
+	width: 18em;
+}
+.popup-menu .popup-toggle i{
+	color: var(--whiteText);
+	border: 1px solid var(--whiteText);
+	padding: .25em;
+	border-radius: 50%;
+	cursor: pointer;
+	position: absolute;
+	bottom: -2em;
+	right: 0;
+}
+.popup-menu .menu{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: .5em;
+}
+.popup-menu .menu li{
+	background: white;
+	padding: .2em;
+	font-size: .95em;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: .2em;
+	cursor: pointer;
+	color: var(--primaryText);
+}
+.popup-menu .menu li a{
+	color: var(--primaryText);
+	text-decoration: none;
 }
