@@ -24,6 +24,7 @@ body{
 .popup-menu{
 	position: relative;
 	width: 18em;
+	margin-bottom: 4em;
 }
 .popup-menu .popup-toggle i{
 	color: var(--whiteText);
@@ -56,4 +57,7 @@ body{
 .popup-menu .menu li a{
 	color: var(--primaryText);
 	text-decoration: none;
+}
+img{
+	width: 8em;
 }
