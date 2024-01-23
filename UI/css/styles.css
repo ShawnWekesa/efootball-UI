@@ -58,6 +58,16 @@ body{
 	color: var(--primaryText);
 	text-decoration: none;
 }
+.carousel{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: .4em;
+	border: 1px solid white;
+	padding: .4em;
+	overflow: hidden;
+	border-radius: 3px;
+}
 img{
 	width: 8em;
 }
