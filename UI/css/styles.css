@@ -25,7 +25,6 @@ body{
 	position: relative;
 	width: 18em;
 	margin-bottom: 4em;
-	display: none;
 }
 .popup-menu .popup-toggle i{
 	color: var(--whiteText);
@@ -42,6 +41,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	gap: .5em;
+	display: none;
 }
 .popup-menu .menu li{
 	background: white;
