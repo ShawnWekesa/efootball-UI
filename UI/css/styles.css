@@ -25,6 +25,7 @@ body{
 	position: relative;
 	width: 18em;
 	margin-bottom: 4em;
+	display: none;
 }
 .popup-menu .popup-toggle i{
 	color: var(--whiteText);
