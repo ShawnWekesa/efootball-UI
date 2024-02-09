@@ -42,7 +42,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	gap: .5em;
-/*	display: none;*/
+	display: none;
 }
 .popup-menu .menu li{
 	background: white;
