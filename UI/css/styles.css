@@ -14,12 +14,13 @@
 	--gray: #c0c0c0;
 	--grayAlpha: #7a7a7a94;
 	--whiteText: #efefef;
-	--blueButtonBackground: #2d71da70;
+	--blueButtonBackground: #58b3f370;
 }
 body{
 	font-family: 'Poppins', sans-serif;
 	background: var(--primaryColor);
 	padding: 2em;
+/*	filter: opacity(100%);*/
 }
 .popup-menu{
 	position: relative;
@@ -41,7 +42,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	gap: .5em;
-	display: none;
+/*	display: none;*/
 }
 .popup-menu .menu li{
 	background: white;
@@ -58,6 +59,55 @@ body{
 .popup-menu .menu li a{
 	color: var(--primaryText);
 	text-decoration: none;
+}
+.popup-menu .menu .clear-cache{
+	position: relative;
+}
+.popup-menu .menu .clear-cache .cache-div{
+	position: absolute;
+	top: -10em;
+	left: 105%;
+	background: white;
+	color: black;
+	padding: 1em;
+	width: 15em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: .5em;
+	border-radius: .4em;
+	font-weight: 500;
+	cursor: default;
+	display: none;
+}
+.popup-menu .menu .clear-cache .cache-div span{
+	font-weight: 600;
+}
+.popup-menu .menu .clear-cache .cache-div p{
+	font-size: .6em;
+	text-align: center;
+	font-weight: 600;
+	color: rgba(0, 0, 0, .8);
+}
+.popup-menu .menu .clear-cache .cache-div div{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: .5em;
+}
+.popup-menu .menu .clear-cache .cache-div div button{
+	border: none;
+	outline: none;
+	color: var(--primaryText);
+	background: var(--blueButtonBackground);
+	width: 100%;
+	padding: .4em 0;
+	border-radius: .2em;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: .9em;
 }
 .carousel{
 	display: flex;
