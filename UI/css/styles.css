@@ -20,7 +20,6 @@ body{
 	font-family: 'Poppins', sans-serif;
 	background: var(--primaryColor);
 	padding: 2em;
-/*	filter: opacity(100%);*/
 }
 .popup-menu{
 	position: relative;
