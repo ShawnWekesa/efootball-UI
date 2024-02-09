@@ -17,9 +17,16 @@ toggleMenu.addEventListener('click', () => {
 const clearCacheTrigger = document.querySelector('.clear-cache > span')
 const clearCacheDiv = document.querySelector('.cache-div');
 const clearCacheButtons = document.querySelectorAll('.cache-div div button')
+const clearcacheSpan = document.querySelector('.cache-div span')
+const clearcacheParagraph = document.querySelector('.cache-div p')
 
 clearCacheTrigger.addEventListener("click", () => {
     clearCacheDiv.style.display = "flex";
+    clearcacheSpan.innerText = "Clear Cache?"
+    clearcacheParagraph.innerText = "Clearing the data cache may fix some problems with the game."
+    clearCacheButtons[0].style.display = "block"
+    clearCacheButtons[1].style.display = "block"
+    clearCacheButtons[2].style.display = "none"
 })
 
 clearCacheButtons.forEach(button => {
@@ -31,9 +38,7 @@ clearCacheButtons[0].addEventListener("click", () => {
     clearCacheDiv.style.display = "none";
 })
 clearCacheButtons[1].addEventListener("click", () => {
-    const clearcacheSpan = document.querySelector('.cache-div span')
-    const clearcacheParagraph = document.querySelector('.cache-div p')
-
+    
     clearcacheSpan.innerText = "Cache Cleared"
     clearcacheParagraph.innerText = "The process completed successfully"
     clearCacheButtons[0].style.display = "none"
@@ -41,7 +46,6 @@ clearCacheButtons[1].addEventListener("click", () => {
     clearCacheButtons[2].style.display = "block"
 
     clearCacheButtons[2].addEventListener("click", () => {
-    clearCacheDiv.style.display = "none";
-})
-    console.log(clearcacheParagraph, clearcacheSpan)
+        clearCacheDiv.style.display = "none";
+    })
 })
