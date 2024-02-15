@@ -115,9 +115,13 @@ body{
 	gap: .4em;
 	border: 1px solid white;
 	padding: .4em;
-	overflow: hidden;
+/*	overflow: hidden;*/
 	border-radius: 3px;
+	position: relative;
 }
-img{
-	width: 8em;
+.carousel div{
+	position: absolute;
+}
+.carousel div img{
+	width: 4em;
 }

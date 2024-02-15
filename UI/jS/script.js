@@ -49,3 +49,25 @@ clearCacheButtons[1].addEventListener("click", () => {
         clearCacheDiv.style.display = "none";
     })
 })
+
+const carousel = document.querySelector('.carousel div')
+const carouselImages = document.querySelector('.carousel div').getElementsByTagName('img');
+let left = 20
+
+function shuffleCarousel(){
+    let removed = carouselImages[0]
+    removed.remove()
+    carousel.appendChild(removed)
+
+    return carouselImages;
+    console.log(carouselImages, removed)  
+}
+
+shuffleCarousel()
+
+// const moveleft = setInterval(
+//  function(){
+//      left--
+//      console.log(left)
+//      carousel.style.left = `${left}px`
+//  }, 100) 
