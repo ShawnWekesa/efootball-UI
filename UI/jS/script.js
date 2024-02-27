@@ -50,20 +50,50 @@ clearCacheButtons[1].addEventListener("click", () => {
     })
 })
 
-const carousel = document.querySelector('.carousel div')
-const carouselImages = document.querySelector('.carousel div').getElementsByTagName('img');
-let left = 20
+const shuffleCarousel = setInterval(
+    () => {
+        const carousel = document.querySelector('.carousel div')
+        const carouselImages = document.querySelector('.carousel div').getElementsByTagName('img');
+        let srcArray = [
+                        "assets/banners/banner1.png",
+                        "assets/banners/banner2.png",
+                        "assets/banners/banner3.png",
+                        "assets/banners/banner4.png"
+                                                   ]
 
-function shuffleCarousel(){
-    let removed = carouselImages[0]
-    removed.remove()
-    carousel.appendChild(removed)
+    function arrayShuffle() {
+        for (let i = srcArray.length - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * (i + 1));
+            [srcArray[i], srcArray[j]] = [srcArray[j], srcArray[i]];
+        }
+    }
 
-    return carouselImages;
-    console.log(carouselImages, removed)  
-}
+    arrayShuffle()
 
-shuffleCarousel()
+    for(i = 0; i < carouselImages.length; i++){
+        for(j = 0; j < srcArray.length; j++){
+            carouselImages[i].src = srcArray[j];
+        }
+    }
+},5000)
+
+// const carousel = document.querySelector('.carousel div')
+// const carouselImages = document.querySelector('.carousel div').getElementsByTagName('img');
+// let left = 20
+
+// function shuffleCarousel(){
+     
+
+//     for(i = 0; i < carouselImages.length; i++){
+//         carouselImages[i].setAttribute('data-index', i)
+//     }
+// }
+
+// shuffleCarousel()
+
+    // carouselImages.forEach(carouselImage => {
+    //    console.log('hi')
+    // });
 
 // const moveleft = setInterval(
 //  function(){
