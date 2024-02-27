@@ -71,8 +71,8 @@ const shuffleCarousel = setInterval(
     arrayShuffle()
 
     for(i = 0; i < carouselImages.length; i++){
-        for(j = 0; j < srcArray.length; j++){
-            carouselImages[i].src = srcArray[j];
+        for(i = 0; i < srcArray.length; i++){
+            carouselImages[i].src = srcArray[i];
         }
     }
 },5000)
