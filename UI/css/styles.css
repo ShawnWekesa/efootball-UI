@@ -108,20 +108,57 @@ body{
 	cursor: pointer;
 	font-size: .9em;
 }
+.home nav{
+	color: var(--whiteText);
+}
+.home nav .aaa{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.home nav .aaa .currency{
+	display: flex;
+	align-items: center;
+	gap: 2.5em;
+}
+.home nav .aaa .currency div{
+	display: flex;
+	align-items: center;
+	gap: .2em;
+}
+.home nav .aaa .currency div img{
+	width: 1em;
+}
+.home nav .aaa .currency div span{
+	font-size: .8em;
+}
+.home nav .aaa .info{
+	color: var(--primaryText);
+	display: flex;
+	align-items: center;
+	gap: 4em;
+}
 .carousel{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: .4em;
-	border: 1px solid white;
+/*	border: 1px solid white;*/
 	padding: .4em;
-/*	overflow: hidden;*/
-	border-radius: 3px;
+	overflow: hidden;
+	flex-wrap: nowrap;
 	position: relative;
+	height: 12em;
+/*	width: 10em;*/
 }
 .carousel div{
 	position: absolute;
+	left: -32em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: .4em;
 }
 .carousel div img{
-	width: 4em;
+	height: 11em;
+	border-radius: 6px;
 }

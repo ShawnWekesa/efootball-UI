@@ -75,29 +75,6 @@ const shuffleCarousel = setInterval(
             carouselImages[i].src = srcArray[i];
         }
     }
-},5000)
+},4000)
 
-// const carousel = document.querySelector('.carousel div')
-// const carouselImages = document.querySelector('.carousel div').getElementsByTagName('img');
-// let left = 20
 
-// function shuffleCarousel(){
-     
-
-//     for(i = 0; i < carouselImages.length; i++){
-//         carouselImages[i].setAttribute('data-index', i)
-//     }
-// }
-
-// shuffleCarousel()
-
-    // carouselImages.forEach(carouselImage => {
-    //    console.log('hi')
-    // });
-
-// const moveleft = setInterval(
-//  function(){
-//      left--
-//      console.log(left)
-//      carousel.style.left = `${left}px`
-//  }, 100) 
