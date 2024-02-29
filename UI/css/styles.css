@@ -18,8 +18,12 @@
 }
 body{
 	font-family: 'Poppins', sans-serif;
+	padding: 1em;
+}
+body > div{
+	width: 620px;
 	background: var(--primaryColor);
-	padding: 2em;
+	padding: .5em 1em;
 }
 .popup-menu{
 	position: relative;
@@ -108,47 +112,80 @@ body{
 	cursor: pointer;
 	font-size: .9em;
 }
-.home nav{
+.sections nav{
 	color: var(--whiteText);
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
 }
-.home nav .aaa{
+.sections nav .aaa{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
-.home nav .aaa .currency{
+.sections nav .aaa .currency{
 	display: flex;
 	align-items: center;
 	gap: 2.5em;
 }
-.home nav .aaa .currency div{
+.sections nav .aaa .currency div{
 	display: flex;
 	align-items: center;
 	gap: .2em;
 }
-.home nav .aaa .currency div img{
+.sections nav .aaa .currency div img{
 	width: 1em;
 }
-.home nav .aaa .currency div span{
+.sections nav .aaa .currency div span{
 	font-size: .8em;
 }
-.home nav .aaa .info{
+.sections nav .aaa .info{
 	color: var(--primaryText);
 	display: flex;
 	align-items: center;
 	gap: 4em;
 }
+.sections nav .aaa .info i{
+	cursor: pointer;
+}
+.sections nav .bbb{
+	display: flex;
+	justify-content: center;
+}
+.sections nav .bbb ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	background: var(--grayAlpha);
+	border-radius: .91em;
+	overflow: hidden;
+}
+.sections nav .bbb li{
+	width: 5em;
+	padding: .2em 3em;
+	display: flex;
+	justify-content: center;
+	border-radius: .91em;
+	cursor: pointer;
+/*	pointer-events: none;*/
+}
+.sections nav .bbb li:hover{
+	background: var(--gray);
+}
+.sections nav .bbb li.active{
+	background: var(--gray);
+}
 .carousel{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-/*	border: 1px solid white;*/
 	padding: .4em;
 	overflow: hidden;
 	flex-wrap: nowrap;
 	position: relative;
 	height: 12em;
-/*	width: 10em;*/
 }
 .carousel div{
 	position: absolute;

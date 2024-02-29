@@ -50,6 +50,7 @@ clearCacheButtons[1].addEventListener("click", () => {
     })
 })
 
+
 const shuffleCarousel = setInterval(
     () => {
         const carousel = document.querySelector('.carousel div')
@@ -71,10 +72,21 @@ const shuffleCarousel = setInterval(
     arrayShuffle()
 
     for(i = 0; i < carouselImages.length; i++){
-        for(i = 0; i < srcArray.length; i++){
-            carouselImages[i].src = srcArray[i];
-        }
+        carouselImages[i].src = srcArray[i];
     }
 },4000)
 
 
+const sectionNavs = document.querySelectorAll('.bbb ul li')
+
+sectionNavs.forEach( navLink => {
+    navLink.addEventListener("click", (e) =>{
+        sectionNavs.forEach(navLink => {
+            if(navLink.classList.contains("active")){
+            navLink.classList.remove("active")
+            console.log('hi')
+        }
+        e.target.classList.add("active")
+        })
+    })
+})
