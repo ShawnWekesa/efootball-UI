@@ -164,12 +164,11 @@ body > div{
 }
 .sections nav .bbb li{
 	width: 5em;
-	padding: .2em 3em;
+	padding: .1em 3em;
 	display: flex;
 	justify-content: center;
 	border-radius: .91em;
 	cursor: pointer;
-/*	pointer-events: none;*/
 }
 .sections nav .bbb li:hover{
 	background: var(--gray);
@@ -189,7 +188,7 @@ body > div{
 }
 .carousel div{
 	position: absolute;
-	left: -32em;
+	left: -31em;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -198,4 +197,33 @@ body > div{
 .carousel div img{
 	height: 11em;
 	border-radius: 6px;
+}
+.home-nav{
+	margin-top: .51em;
+	display: flex;
+	gap: 1em;
+	align-items: center;
+	justify-content: center;
+}
+.home-nav > div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: var(--whiteText);
+	cursor: pointer;
+}
+.home-nav > div i{
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: red;
+	/*width: 2em;
+	height: 2em*/;
+	padding: 1em 1.9em;
+	border-radius: .3em;
+}
+.home-nav > div span{
+	font-size: .6em;
 }
