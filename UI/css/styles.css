@@ -213,16 +213,28 @@ body > div{
 	color: var(--whiteText);
 	cursor: pointer;
 }
-.home-nav > div i{
+.home-nav div i{
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: red;
-	/*width: 2em;
-	height: 2em*/;
 	padding: 1em 1.9em;
 	border-radius: .3em;
+}
+.home-nav div .bx-football{
+	background: #0ec9d5;
+}
+.home-nav div .bxs-user-check{
+	background: #43ab03;
+}
+.home-nav div .bx-user{
+	background: #c40c2b;
+}
+.home-nav div .bx-briefcase{
+	background: #970483;
+}
+.home-nav div .bx-task{
+	background: #d5a40e
 }
 .home-nav > div span{
 	font-size: .6em;
