@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+/*	outline: 1px solid red;*/
 }
 :root{
 	--primaryColor: #060e12;
@@ -13,8 +14,11 @@
 	--primaryText: #0d5dd9;
 	--gray: #c0c0c0;
 	--grayAlpha: #7a7a7a94;
+	--grayBg: #d5d5d538;
 	--whiteText: #efefef;
+	--whiteTextAlpha: #efefef94;
 	--blueButtonBackground: #58b3f370;
+	--buttonGradient: ;
 }
 body{
 	font-family: 'Poppins', sans-serif;
@@ -22,6 +26,7 @@ body{
 }
 body > div{
 	width: 620px;
+	height: 355px;
 	background: var(--primaryColor);
 	padding: .5em 1em;
 }
@@ -176,6 +181,9 @@ body > div{
 .sections nav .bbb li.active{
 	background: var(--gray);
 }
+/*.sections section{
+	height: 355px;
+}*/
 .carousel{
 	display: flex;
 	align-items: center;
@@ -222,20 +230,93 @@ body > div{
 	border-radius: .3em;
 }
 .home-nav div .bx-football{
+	background: #40c1c9
+}
+.home-nav div .bx-football:hover{
 	background: #0ec9d5;
 }
 .home-nav div .bxs-user-check{
+	background: #58ba1b;
+}
+.home-nav div .bxs-user-check:hover{
 	background: #43ab03;
 }
 .home-nav div .bx-user{
+	background: #dd1c3d;
+}
+.home-nav div .bx-user:hover{
 	background: #c40c2b;
 }
 .home-nav div .bx-briefcase{
+	background: #a1118e;
+}
+.home-nav div .bx-briefcase:hover{
 	background: #970483;
 }
 .home-nav div .bx-task{
-	background: #d5a40e
+	background: #dbad22;
+}
+.home-nav div .bx-task:hover{
+	background: #d5a40e;
 }
 .home-nav > div span{
 	font-size: .6em;
+}
+.inbox{
+	padding: .7em 3.5em;
+	position: relative;
+	outline: 1px solid red;
+	height: 320px;
+}
+.inbox h3{
+	color: #fff605d6;
+}
+.inbox .item{
+	display: flex;
+	align-items: center;
+	gap: .3em;
+	padding: .2em .4em;
+	border-radius: .3em;
+	background: var(--grayBg);
+}
+.inbox .item .icon i{
+	color: var(--whiteText);
+	font-size: 1.6em;
+	background: #09c42ed9;
+	padding: .3em;
+	border-radius: 50%;
+}
+.inbox .item .text{
+	padding: .2em 0;
+	color: var(--whiteText);
+}
+.inbox .item .text p:first-child{
+	font-size: .9em;
+}
+.inbox .item .text p:last-child{
+	font-size: .7em;
+	color: var(--whiteTextAlpha);
+}
+.inbox .item .date{
+	color: var(--whiteText);
+	font-size: .8em;
+	position: relative;
+	width: 5em;
+	height: 2em;
+}
+.inbox .item .date span{
+	position: absolute;
+	top: -.5em;
+	left: 10em;
+}
+.inbox .buttons{
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	gap: 10em;
+	border: none;
+	outline: none;
+}
+.inbox .buttons button{
+	padding: .1em 1em;
 }
