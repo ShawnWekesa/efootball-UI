@@ -17,7 +17,7 @@
 	--grayBg: #d5d5d538;
 	--whiteText: #efefef;
 	--whiteTextAlpha: #efefef94;
-	--blueButtonBackground: #58b3f370;
+	--blueButtonBackground: #089ebf;
 	--buttonGradient: ;
 }
 body{
@@ -265,7 +265,6 @@ body > div{
 .inbox{
 	padding: .7em 3.5em;
 	position: relative;
-	outline: 1px solid red;
 	height: 320px;
 }
 .inbox h3{
@@ -311,12 +310,31 @@ body > div{
 }
 .inbox .buttons{
 	position: absolute;
-	bottom: 0;
+	bottom: .6em;
 	display: flex;
 	gap: 10em;
-	border: none;
-	outline: none;
 }
 .inbox .buttons button{
-	padding: .1em 1em;
+	padding: .1em .11em;
+	width: 8em;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: .2em;
+}
+.inbox .buttons .back{
+	text-align: left;
+	color: var(--whiteText);
+	background: var(--blueButtonBackground);
+	display: flex;
+	align-items: center;
+	gap: .2em;
+}
+.inbox .buttons .back i{
+	font-size: 1.5em;
+}
+.inbox .buttons .receive-all{
+	color: var(--primaryText);
+	outline: 1px solid var(--grayAlpha);
+	background: transparent;
 }
