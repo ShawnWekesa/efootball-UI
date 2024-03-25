@@ -17,8 +17,8 @@
 	--grayBg: #d5d5d538;
 	--whiteText: #efefef;
 	--whiteTextAlpha: #efefef94;
-	--blueButtonBackground: #089ebf;
-	--buttonGradient: ;
+	--blueButtonBackgroundAlpha: #3481924d;
+	--buttonGradient: #089ebf;
 }
 body{
 	font-family: 'Poppins', sans-serif;
@@ -270,13 +270,14 @@ body > div{
 .inbox h3{
 	color: #fff605d6;
 }
-.inbox .item{
+.inbox .item .item-content{
 	display: flex;
 	align-items: center;
 	gap: .3em;
 	padding: .2em .4em;
 	border-radius: .3em;
 	background: var(--grayBg);
+	cursor: pointer;
 }
 .inbox .item .icon i{
 	color: var(--whiteText);
@@ -321,11 +322,12 @@ body > div{
 	outline: none;
 	cursor: pointer;
 	border-radius: .2em;
+	font-size: .9em;
 }
 .inbox .buttons .back{
 	text-align: left;
 	color: var(--whiteText);
-	background: var(--blueButtonBackground);
+	background: var(--buttonGradient);
 	display: flex;
 	align-items: center;
 	gap: .2em;
@@ -337,4 +339,40 @@ body > div{
 	color: var(--primaryText);
 	outline: 1px solid var(--grayAlpha);
 	background: transparent;
+}
+.inbox .items .item .item-popup{
+	margin: auto;
+	width: 20em;
+	height: 11em;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: .8em 0;
+	border-radius: .5em;
+}
+.inbox .items .item .item-popup i{
+	color: var(--whiteText);
+	font-size: 2.3em;
+	background: #09c42ed9;
+	padding: .3em;
+	border-radius: 50%;
+}
+.inbox .items .item .item-popup p{
+	font-weight: bold;
+	font-size: .9em;
+}
+.inbox .items .item .item-popup span{
+	font-size: .7em;
+}
+.inbox .items .item .item-popup button{
+	border: none;
+	outline: none;
+	color: var(--primaryText);
+	background: var(--blueButtonBackgroundAlpha);
+	width: 90%;
+	padding: .5em 0;
+	border-radius: .5em;
+	cursor: pointer;
 }
