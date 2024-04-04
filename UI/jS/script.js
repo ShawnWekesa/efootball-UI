@@ -84,7 +84,6 @@ sectionNavs.forEach( navLink => {
         sectionNavs.forEach(navLink => {
             if(navLink.classList.contains("active")){
             navLink.classList.remove("active")
-            console.log('hi')
         }
         e.target.classList.add("active")
         })
